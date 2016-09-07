@@ -5,6 +5,10 @@
 	bcp "SELECT * FROM XXXX" queryout "C:\Tmep\BCP_Error.txt" -c -S サーバー名 -d データベース名 -U ユーザー名 -P パスワード名
 	
 	
+項目の変化がある場合は、ｃｓｖ ファイルを修正する必要があると思います。
+例：書出しCSVファイルに項目が10ある、INSERTのテーブルの項目数と順番に合わせて調整する、値がないカラムは空白にする。
+	
+	
 ※バルクInsert(SQLツールで実行)	 BULK INSERT テーブル名
 	 FROM 'フルパス20150430001122.txt'
 	 WITH
